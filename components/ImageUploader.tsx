@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useRef } from 'react';
+import { UploadIcon, CloseIconSmall } from './Icons';
 
 interface ImageUploaderProps {
   title: string;
@@ -102,7 +103,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ title, description
                     className="absolute top-0 right-0 -mt-2 -mr-2 bg-red-600 hover:bg-red-700 text-white rounded-full w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     aria-label="Remove image"
                 >
-                    <CloseIcon />
+                    <CloseIconSmall />
                 </button>
               </div>
             ))}
@@ -112,15 +113,3 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ title, description
     </div>
   );
 };
-
-const UploadIcon: React.FC = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-    </svg>
-);
-
-const CloseIcon: React.FC = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-);
