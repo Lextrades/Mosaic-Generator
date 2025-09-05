@@ -12,18 +12,23 @@ Follow these steps to get the project running on your local machine.
 **Prerequisites:**  Node.js
 Make sure you have Node.js (recommended version 18 or higher) and a package manager (npm or Yarn) installed.
 🛠️ Installation
-1. Clone the Repository: git clone https://github.com/Lextrades/Mosaic-Generator.git
-2. cd Mosaic-Generator
+1. Clone the Repository:
+````
+git clone https://github.com/Lextrades/Mosaic-Generator.git
+````
+2. 
+``` 
+cd Mosaic-Generator 
+```
 3. Install Dependencies:
    ```
    npm install
    ```
-   ## Or if you use Yarn:
+   ### Or if you use Yarn:
    ```
    yarn install
    ```
-4.  Analogy: You have the cookbook, but you're missing ingredients. This command gets all the necessary ingredients for the recipes in the book. 
-5. Install React Plugin (if not already done): Since this is a React project with Vite, you'll need `@vitejs/plugin-react`.
+4. Install React Plugin (if not already done): Since this is a React project with Vite, you'll need `@vitejs/plugin-react`.
    ```
    npm install -D @vitejs/plugin-react
    ```
@@ -32,7 +37,7 @@ Make sure you have Node.js (recommended version 18 or higher) and a package mana
    yarn add -D @vitejs/plugin-react
    ```
     
-6. Update `vite.config.ts`: Ensure your vite.config.ts uses the React plugin. Add the import and the plugins property:
+5. Update `vite.config.ts`: Ensure your vite.config.ts uses the React plugin. Add the import and the plugins property:
 ```
     import { defineConfig } from 'vite';
     import react from '@vitejs/plugin-react'; // Add import
@@ -48,7 +53,7 @@ Make sure you have Node.js (recommended version 18 or higher) and a package mana
       // ... other configurations remain unchanged ...
     });
 ```
- 
+
 🏃 Start Local Project
 After installation, you can start the project in development mode:
 ```
