@@ -11,5 +11,5 @@
 2. Run the app:
    `npm run dev`
 
-## Run and deploy your AI Studio app
+## Run and deploy your App
 
