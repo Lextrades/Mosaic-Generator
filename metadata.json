@@ -1,0 +1,5 @@
+{
+  "name": "Mosaic Generator",
+  "description": "An application to create a photo mosaic. Users can upload a main image and multiple tile images, and the application will generate a mosaic that recreates the main image using the tiles based on color-matching algorithms.",
+  "requestFramePermissions": []
+}
