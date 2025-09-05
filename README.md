@@ -16,42 +16,42 @@ Make sure you have Node.js (recommended version 18 or higher) and a package mana
 ````
 git clone https://github.com/Lextrades/Mosaic-Generator.git
 ````
-2. 
+2. Switch to Folder
 ``` 
 cd Mosaic-Generator 
 ```
 3. Install Dependencies:
-   ```
-   npm install
-   ```
-   ### Or if you use Yarn:
-   ```
-   yarn install
-   ```
+```
+npm install
+```
+### Or if you use Yarn:
+```
+yarn install
+```
 4. Install React Plugin (if not already done): Since this is a React project with Vite, you'll need `@vitejs/plugin-react`.
-   ```
-   npm install -D @vitejs/plugin-react
-   ```
-   ### Or with Yarn:
-   ```
-   yarn add -D @vitejs/plugin-react
-   ```
+```
+npm install -D @vitejs/plugin-react
+```
+### Or with Yarn:
+```
+yarn add -D @vitejs/plugin-react
+```
     
 5. Update `vite.config.ts`: Ensure your vite.config.ts uses the React plugin. Add the import and the plugins property:
 ```
-    import { defineConfig } from 'vite';
-    import react from '@vitejs/plugin-react'; // Add import
-    import path from 'path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'; // Add import
+import path from 'path';
     
-    export default defineConfig({
-      plugins: [react()], // Add plugin here
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, './src'),
-        },
-      },
-      // ... other configurations remain unchanged ...
-    });
+export default defineConfig({
+  plugins: [react()], // Add plugin here
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  // ... other configurations remain unchanged ...
+});
 ```
 
 🏃 Start Local Project
