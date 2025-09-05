@@ -18,17 +18,21 @@ Make sure you have Node.js (recommended version 18 or higher) and a package mana
    ```
    npm install
    ```
-   # Or if you use Yarn:
-   # yarn install
-7.  Analogy: You have the cookbook, but you're missing ingredients. This command gets all the necessary ingredients for the recipes in the book. 
-8. Install React Plugin (if not already done): Since this is a React project with Vite, you'll need `@vitejs/plugin-react`.
+   ## Or if you use Yarn:
+   ```
+   yarn install
+   ```
+4.  Analogy: You have the cookbook, but you're missing ingredients. This command gets all the necessary ingredients for the recipes in the book. 
+5. Install React Plugin (if not already done): Since this is a React project with Vite, you'll need `@vitejs/plugin-react`.
    ```
    npm install -D @vitejs/plugin-react
    ```
-   # Or with Yarn:
-    # yarn add -D @vitejs/plugin-react
+   ### Or with Yarn:
+   ```
+   yarn add -D @vitejs/plugin-react
+   ```
     
-12. Update `vite.config.ts`: Ensure your vite.config.ts uses the React plugin. Add the import and the plugins property:
+6. Update `vite.config.ts`: Ensure your vite.config.ts uses the React plugin. Add the import and the plugins property:
 ```
     import { defineConfig } from 'vite';
     import react from '@vitejs/plugin-react'; // Add import
@@ -50,8 +54,10 @@ After installation, you can start the project in development mode:
 ```
 npm run dev
 ```
-# Or with Yarn:
-# yarn dev
+### Or with Yarn:
+```
+yarn dev
+```
 
 Your project will typically be available at http://localhost:5173 (or a similar port).
 
@@ -83,8 +89,10 @@ To compile and optimize the project for production:
 ```
 npm run build
 ```
-# Or with Yarn:
-# yarn build
+### Or with Yarn:
+```
+yarn build
+```
 
 After this command, you will find the production-ready files in the dist/ directory. These files can be deployed to your web server.
 
